@@ -25,7 +25,7 @@ const NewsBar:React.FC<NewsBarProps> = ({league, sport}) => {
       ` http://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/news`,
       fetcher);
 
-      if(!data && data === undefined ){
+      if (typeof data === 'undefined' || data === null) {
         return <Loader />
       }
 
