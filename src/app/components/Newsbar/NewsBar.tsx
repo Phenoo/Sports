@@ -25,10 +25,6 @@ const NewsBar:React.FC<NewsBarProps> = ({league, sport}) => {
       ` https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/news`,
       fetcher);
 
-      if(!data && data === undefined ){
-        return <Loader />
-      }
-
    return (
     <div className='mb-8'>
       <div className='text-2xl lg:text-3xl uppercase font-bold'>
