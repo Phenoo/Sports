@@ -18,16 +18,20 @@ const NotifyBody: React.FC<NotifyBodyProps> = ({currentUser}) => {
                 transition={{duration: '0.2', ease: "easeInOut"}}>
                      {
                     currentUser ?
-                    <div className=''>
+                    <div className='font-bold'>
                         <div>
                             - You just logged in
                         </div>
                     </div>
                     :
                     <div className='h-full w-full flex items-center justify-center'>
-                        <div className='text-base'>
+                        <div className=' h-full w-full flex items-center justify-center'>
+
+                        <div className='text-base mt-24'>
                             Login to see your notifications!
                         </div>
+                        </div>
+
                     </div> 
                 }
              </motion.div>

@@ -6,7 +6,7 @@ const Page = () => {
   return (
     <Container>
 
-    <div className='min-h-screen flex justify-center'>
+    <div className='min-h-screen flex justify-center items-center'>
       <div className='flex justify-center items-center h-full'>
         <div>Working in Progress</div>
         <Loader />

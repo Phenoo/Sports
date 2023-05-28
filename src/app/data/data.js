@@ -10,7 +10,6 @@ import {  FaBars } from 'react-icons/fa';
 import {HiOutlineTrophy} from 'react-icons/hi2'
 
 export const menuItems = [
-  { label: 'Matches', icon: <FaList />, link: '/' },
   { label: 'Leagues', icon: <HiOutlineTrophy />, link: '/leagues' },
   { label: 'News', icon: <BiNews /> , link: '/news'},
   { label: 'Favourites', icon: <BiHeart /> , link: '/favorites'},

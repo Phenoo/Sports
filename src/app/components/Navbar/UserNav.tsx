@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React from 'react'
-import Img1 from './null.png'
+import Img1 from '@/app/profile/null.jpeg'
 import { SafeUser } from '@/app/types'
 import Link from 'next/link'
 import LoginButton from '../Sidebar/LoginButton'

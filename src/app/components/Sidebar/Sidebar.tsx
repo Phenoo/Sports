@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Logo from '../Logo'
 
 import {Icons} from '@/app/data/data'
-import { MdDashboard, MdOutlineLogout} from 'react-icons/md'
+import { MdDashboard} from 'react-icons/md'
 import Select from './Select'
 import TennisSelect from './TennisSelect'
 
@@ -12,9 +12,9 @@ import UfcSelect from './UfcSelect'
 import Link from 'next/link'
 
 
-import { signOut } from 'next-auth/react'
 import { SafeUser } from '@/app/types'
 import LoginButton from './LoginButton'
+import LogoutBtn from '../LogoutBtn'
 
 interface SidebarProps{
   currentUser: SafeUser | null;
@@ -83,19 +83,8 @@ const Sidebar: React.FC<SidebarProps> = ({currentUser}) => {
 
             <div className=''>
               {
-                currentUser ?
-                
-                <div>
-                <button className='flex gap-4 items-center px-4 p-2 bg-[#bb1111] text-white capitalize text-base hover:underline transition rounded-md ' onClick={() => signOut()}>
-                  log out
-                  <MdOutlineLogout />
-                </button>
-                </div>
-                :
-                <LoginButton />
+                currentUser ? <LogoutBtn /> : <LoginButton />
               }
-              
-             
             </div>
         </div>
 
