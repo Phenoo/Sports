@@ -23,7 +23,6 @@ const ScoreBoard = () => {
     <div className='lg:col-span-8'>
       <div className='bg-primary-2 rounded-lg p-2 py-4 sm:p-4 md:p-8'>
         <div className='text-xl font-bold'>Matches</div>
-        <TennisContainer />
         <ScoreContainer league='eng.1' sport='soccer' />
         <ScoreContainer league='esp.1' sport='soccer' />
         <ScoreContainer league='ita.1' sport='soccer' />
@@ -36,6 +35,8 @@ const ScoreBoard = () => {
         <ScoreContainer league='nhl' sport='hockey' />
         <ScoreContainer league='nfl' sport='football' />
         <FightContainer />        
+        <TennisContainer />
+
       </div>
     </div>
   )

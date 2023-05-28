@@ -81,7 +81,7 @@ const GameCard:React.FC<GameCardProps>  = ({game}) => {
       
           <div className='bg-primary p-2 md:p-4 relative flex flex-row justify-between items-center my-4 '>
 
-              <div>
+              <div className='cursor-pointer hover:scale-105 transition-all'>
                 <SlStar color='gray'  />
               </div>
 

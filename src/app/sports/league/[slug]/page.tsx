@@ -3,6 +3,7 @@ import React, { Suspense } from 'react'
 import LeagueList from './LeagueList';
 import Data from './Data';
 import LeagueName from './LeagueName';
+import Container from '@/app/components/Container';
 
 async function getLeague(slug: string){
     const res = await fetch(`http://site.api.espn.com/apis/site/v2/sports/${slug}/teams`, { cache: 'no-store' })
@@ -25,12 +26,15 @@ export default async function LeaguePage({
     const league = await leagueTeam;
     const leagueData = await leagueDataSlug;
   return (
-    <div className='p-2 md:p-4 lg:p-8 bg-primary-2 mx-2 sm:mx-4'>
+    <div className='bg-primary-2'>
+      <Container>
         <Suspense fallback={<div>Loading...</div>}> 
            <LeagueName leagueData={leagueData}  />
            <LeagueList leagueData={league} slug={slug} />
            <Data leagueData={leagueData} />
         </Suspense>
+      </Container>
+
     </div>
   )
 }

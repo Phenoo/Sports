@@ -48,7 +48,9 @@ const ProfileContainer: React.FC<ProfileContainerProps> = ({currentUser}) => {
             </div>
             :
             <div>
-                
+                <div>
+                    Sync your favorites, join the chat, view top predictions and more!
+                </div>
             </div>
             }
            

@@ -40,7 +40,7 @@ const Sidebar: React.FC<SidebarProps> = ({currentUser}) => {
               <div>
                 <MdDashboard size={20} />
               </div>
-              <Link href='/'>
+              <Link  href={'/'} className='hover:text-orange transition  hover:font-bold hover:scale-95'>
                 Home
               </Link>
             </div>
@@ -65,13 +65,13 @@ const Sidebar: React.FC<SidebarProps> = ({currentUser}) => {
                 {
                   Icons.map((item, index) => {
                   const Icon = item.icon;
-                  return  <Link  key={index} href={item.link}>
+                  return  <Link  key={index} href={item.link} className='hover:text-orange transition  hover:font-bold hover:scale-95'>
                     <div className='flex flex-row gap-4 items-center cursor-pointer lg:py-1' >
                       <Icon size={20} />
                       <div className='text-sm lg:text-md capitalize'>
                         {item.name}
                       </div>
-                    </div>; 
+                    </div>
                     </Link>
                     
                 })}

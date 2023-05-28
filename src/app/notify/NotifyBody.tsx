@@ -11,7 +11,7 @@ interface NotifyBodyProps {
 const NotifyBody: React.FC<NotifyBodyProps> = ({currentUser}) => {
   return (
     <div>
-         <motion.div className="bg-primary text-primary shadow-lg h-auto min-h-screen p-4 md:p-8"
+         <motion.div className="bg-primary text-primary shadow-lg h-full min-h-screen p-4 md:p-8"
                 initial={{y: "100%",}}
                 animate={{y: "0%", }}
                 exit={{y: "100%"}}
@@ -25,7 +25,7 @@ const NotifyBody: React.FC<NotifyBodyProps> = ({currentUser}) => {
                     </div>
                     :
                     <div className='h-full w-full flex items-center justify-center'>
-                        <div className='text-sm'>
+                        <div className='text-base'>
                             Login to see your notifications!
                         </div>
                     </div> 

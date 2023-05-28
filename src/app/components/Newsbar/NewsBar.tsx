@@ -3,6 +3,7 @@
 import React from 'react'
 import useSWR from 'swr'
 import NewsCard from './NewsCard'
+import Loader from '../Loader';
 
 
 
@@ -24,7 +25,9 @@ const NewsBar:React.FC<NewsBarProps> = ({league, sport}) => {
       ` http://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/news`,
       fetcher);
 
-      
+      if(!data && data === undefined ){
+        return <Loader />
+      }
 
    return (
     <div className='mb-8'>
@@ -39,9 +42,7 @@ const NewsBar:React.FC<NewsBarProps> = ({league, sport}) => {
           <NewsCard article={article} key={index} />
         ))
       }
-       {
-            !data && data === undefined && <div>loading...</div>
-          }
+     
       </div>
 
     </div>

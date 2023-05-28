@@ -18,7 +18,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
             <div className='flex justify-between items-center cursor-pointer py-2 transition-all hover:px-2 hover:bg-orange rounded-sm hover:text-white' onClick={() => handleSportClick(sport.sport)}>
                 <div className='text-sm md:text-lg flex items-center gap-4'>
                     {sport.icon}
-                    <div className='text-sm md:text-md '>
+                    <div className='text-sm'>
                     {sport.sport}
                     </div>
                 </div>

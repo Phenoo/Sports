@@ -1,12 +1,15 @@
 import React from 'react'
 import NewsBody from './NewsBody'
+import Container from '../components/Container'
 
 
 
 const NewsPage = () => {
   return (
-    <div className='m-4 md:m-8'>
-      <NewsBody />
+    <div className=''>
+      <Container>
+        <NewsBody />
+      </Container>
     </div>
   )
 }

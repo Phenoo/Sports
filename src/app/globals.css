@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,700,400&display=swap"');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -84,7 +84,7 @@ body {
   background-color: var(--primary);
   color: var(--text-primary);
   overscroll-behavior-x: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Clash Grotesk', sans-serif;
 }
 
 html,
@@ -99,7 +99,7 @@ body {
 }
 
 div{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Clash Grotesk', sans-serif;
 }
 
 

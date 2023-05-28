@@ -1,6 +1,8 @@
 import React, { Suspense } from 'react'
 import Team from './Team'
 import Matches from './Matches'
+import Loader from '@/app/components/Loader'
+import Container from '@/app/components/Container'
 
 
 async function getTeamData(slugId: string){
@@ -24,11 +26,14 @@ const Page = async ({
         const team = await teamData;
         const teamMatches = await teamMatchesData;
   return (
-    <div className='p-2 md:p-4 lg:p-8 bg-primary-2 mx-2 md:mx-4'>
-      <Suspense fallback={<p>Loading</p>}>
-        <Team team={team} />
-        <Matches teamMatches={teamMatches} />
-      </Suspense>
+    <div className='bg-primary-2 '>
+      <Container>
+        <Suspense fallback={<Loader />}>
+          <Team team={team} />
+          <Matches teamMatches={teamMatches} />
+        </Suspense>
+      </Container>
+     
     </div>
   )
 }

@@ -65,7 +65,7 @@ const NewsBody = () => {
        }
 
   return (
-    <div>
+    <div className='mt-8'>
         <div className='text-xl sm:text-2xl md:text-3xl font-bold text-center'>
             Latest News!
         </div>
