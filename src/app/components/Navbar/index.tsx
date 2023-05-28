@@ -28,7 +28,7 @@ const Navigation: React.FC<NavigationProps> = ({currentUser}) => {
             </div>
           </Link>
 
-          <div className='text-sm sm:text-lg font-bold capitalize rounded-full bg-orange  py-2 px-4 md:px-8 md:py-4 leading-relaxed cursor-pointer flex items-center gap-2'
+          <div className='text-sm sm:text-lg font-bold capitalize rounded-full bg-orange  py-2 px-4  leading-relaxed cursor-pointer flex items-center gap-2'
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           
           >

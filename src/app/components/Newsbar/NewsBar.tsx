@@ -22,10 +22,10 @@ const fetcher = (...args: [RequestInfo, RequestInit?]): Promise<any> =>
 const NewsBar:React.FC<NewsBarProps> = ({league, sport}) => {
  
     const { data, error, isLoading } = useSWR(
-      ` http://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/news`,
+      ` https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/news`,
       fetcher);
 
-      if (typeof data === 'undefined' || data === null) {
+      if(!data && data === undefined ){
         return <Loader />
       }
 

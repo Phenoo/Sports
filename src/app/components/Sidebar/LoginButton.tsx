@@ -10,7 +10,7 @@ const LoginButton = () => {
 
   return (
     <div>
-        <button className='flex gap-4 items-center p-2 md:p-4 capitalize text-base hover:underline transition bg-green text-white rounded-md' onClick={loginModal.onOpen}>
+        <button className='flex gap-4 items-center py-2 px-4 capitalize text-base hover:underline transition bg-green text-white rounded-md' onClick={loginModal.onOpen}>
             login
             <HiOutlineLogin />
         </button>
