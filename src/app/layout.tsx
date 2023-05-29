@@ -9,6 +9,7 @@ import LoginModal from './components/modals/LoginModal'
 import RegisterModal from './components/modals/RegsiterModal'
 import getCurrentUser from './actions/getCurrentUser'
 import Themes from './components/Themes'
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -37,6 +38,7 @@ export default async function RootLayout({
               <div className='w-full md:ml-[210px]'>
                 <Navigation currentUser={currentUser} />
                 {children}
+                <Analytics />
 
               </div>
             </section>
