@@ -63,7 +63,7 @@ const TennisContainer = () => {
                         <div className='mx-4 text-xs md:text-sm text-accent-4'>
                           {item.name} - 
                         </div>
-                       { item.competitions.map((athlete : any) => (
+                       { item.competitions?.map((athlete : any) => (
                             <FightCard  game={athlete} key={athlete.id} />
                        ))}
                  

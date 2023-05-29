@@ -15,9 +15,9 @@ const FightCard = ({game} :any) => {
   
                     <div key={game.competitors[0].id} className='flex w-[100px] md:w-[210px] items-end justify-end'>
                     <div className="flex items-center flex-col sm:flex-row gap-2">
-                      <Image src={game.competitors[0].athlete.flag?.href || Img1} alt="logo" width={20} height={20}  />
-                        <p className='hidden sm:flex  text-sm '>{game.competitors[0].athlete.displayName}</p> 
-                         <p className='sm:hidden flex text-xs'>{game.competitors[0].athlete.shortName}</p>
+                      <Image src={game.competitors[0].athlete?.flag?.href || Img1} alt="logo" width={20} height={20}  />
+                        <p className='hidden sm:flex  text-sm font-bold '>{game.competitors[0]?.athlete?.displayName}</p> 
+                         <p className='sm:hidden flex text-xs font-bold'>{game.competitors[0]?.athlete?.shortName}</p>
                       </div>
                     </div>
                         <div className='w-7 mx-auto md:w-14'>
@@ -28,9 +28,9 @@ const FightCard = ({game} :any) => {
 
                     <div key={game.competitors[1].id} className='flex w-[100px] md:w-[210px] items-start justify-start'>
                       <div className="flex items-center flex-col sm:flex-row gap-2">
-                        <Image src={game.competitors[1].athlete.flag?.href || Img1} alt="logo" width={20} height={20}  />
-                        <p className='hidden sm:flex  text-sm '>{game.competitors[1].athlete.displayName}</p> 
-                         <p className='sm:hidden flex text-xs'>{game.competitors[1].athlete.shortName}</p>
+                        <Image src={game.competitors[1].athlete?.flag?.href || Img1} alt="logo" width={20} height={20}  />
+                        <p className='hidden sm:flex  text-sm font-bold '>{game.competitors[1]?.athlete?.displayName}</p> 
+                         <p className='sm:hidden flex text-xs  font-bold'>{game.competitors[1]?.athlete?.shortName}</p>
                       </div>
 
                     
