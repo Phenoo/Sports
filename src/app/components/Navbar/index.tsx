@@ -24,11 +24,11 @@ const Navigation: React.FC<NavigationProps> = ({currentUser}) => {
           <Link href='/notify'>
             <div className='relative'>
                   <span className='w-[10px] h-[10px] rounded-full bg-red absolute right-0 top-0'></span>
-                  <FaBell size={30} />
+                  <FaBell size={24} />
             </div>
           </Link>
 
-          <div className='text-sm sm:text-lg font-bold capitalize rounded-full bg-orange  py-2 px-4  leading-relaxed cursor-pointer flex items-center gap-2'
+          <div className='text-xs sm:text-lg font-bold capitalize rounded-full bg-orange  py-2 px-4  leading-relaxed cursor-pointer flex items-center gap-2'
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           
           >
@@ -39,6 +39,7 @@ const Navigation: React.FC<NavigationProps> = ({currentUser}) => {
             <UserNav currentUser={currentUser}/> 
         </div> 
         </div>
+        <hr />
     </>
 
   )

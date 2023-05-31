@@ -24,7 +24,7 @@ const NewsBody = () => {
         control: (provided: any) => ({
          ...provided,
          borderRadius: '4px',
-         borderColor: '#27282f',
+         borderColor: 'var(--accent-4)',
          boxShadow: 'none',
          backgroundColor: 'var(--primary)',
          color: 'var(--secondary-2)',

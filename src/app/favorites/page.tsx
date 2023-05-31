@@ -8,8 +8,7 @@ const Page = () => {
 
     <div className='min-h-screen flex justify-center items-center'>
       <div className='flex justify-center items-center h-full'>
-        <div>Working in Progress</div>
-        <Loader />
+        <div>Working in Progress...</div>
       </div>
     </div>
     </Container>

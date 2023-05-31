@@ -6,10 +6,9 @@ import { Switch } from "@headlessui/react";
 
 import { useState, Fragment } from 'react'
 import { RadioGroup } from '@headlessui/react'
-import { FaCheck } from 'react-icons/fa';
 import { AiOutlineCheckCircle } from 'react-icons/ai';
 
-const plans = ['Dark', 'Light', 'System']
+const plans = ['dark', 'light', 'System']
 
 export default function RadioTheme() {
   const [plan, setPlan] = useState(plans[0]);
@@ -46,7 +45,7 @@ export default function RadioTheme() {
                         <div className="text-sm">
                           <RadioGroup.Label
                             as="p"
-                            className={`font-medium  ${
+                            className={`font-medium capitalize  ${
                               checked ? 'text-primary-2' : 'text-secondary-2'
                             }`}
                           >

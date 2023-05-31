@@ -15,9 +15,9 @@ export default function LeagueTabs() {
 
 
   return (
-    <div className="w-full px-2 py-16 sm:px-0">
+    <div className="w-full py-16 sm:px-0">
       <Tab.Group>
-        <Tab.List className="flex space-x-2 flex-row  md:overflow-auto overflow-x-scroll rounded-xl bg-white-900/20 p-1 w-full">
+        <Tab.List className="flex space-x-2 flex-row  md:overflow-auto overflow-x-scroll rounded-xl bg-white-900/20 py-1 w-full">
           {sportsData.map((category) => (
             <Tab
               key={category.sport}
@@ -77,16 +77,16 @@ export default function LeagueTabs() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                'rounded-sm bg-primary p-3 h-full py-4',
+                'rounded-sm bg-primary px-0 md:p-3 h-full py-4',
                 'ring-primary ring-opacity-60 ring-offset-2 ring-offset-primary focus:outline-none focus:ring-2'
               )}
             >
                 <div key={sport.sport} className='relative flex flex-col'>
-                    <div className='text-lg my-4 sm:text-xl md:text-2xl font-bold'>
+                    <div className='text-lg my-4 sm:text-xl md:text-2xl font-bold px-2'>
                         Top leagues
                     </div>
                   {sport.leagues.map((league) => (
-                      <Link href={`/sports/league/${encodeURIComponent(league.slug)}`} key={league.abbreviation} className='hover:text-orange transition-all cursor-pointer py-1 px-4 w-full border-b border-accent-4'>
+                      <Link href={`/sports/league/${encodeURIComponent(league.slug)}`} key={league.abbreviation} className='hover:text-orange transition-all cursor-pointer py-1 px-4 w-full border-y border-accent-4'>
                           {league.label}
                       </Link>
                   ))}
@@ -98,16 +98,16 @@ export default function LeagueTabs() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                'rounded-sm bg-primary p-3 h-full py-4',
+                'rounded-sm bg-primary px-0 md:p-3 h-full py-4',
                 'ring-primary ring-opacity-60 ring-offset-2 ring-offset-primary focus:outline-none focus:ring-2'
               )}
             >
                 <div key={sport.sport} className='relative flex flex-col'>
-                    <div className='text-lg my-4 sm:text-xl md:text-2xl font-bold'>
+                    <div className='text-lg my-4 sm:text-xl md:text-2xl font-bold px-2'>
                         Top leagues
                     </div>
                   {sport.leagues.map((league) => (
-                        <Link href={`/tennis/${encodeURIComponent(league.slug)}`}  key={league.abbreviation} className='hover:text-orange transition-all cursor-pointer py-1 px-4 w-full border-b border-accent-4'>
+                        <Link href={`/tennis/${encodeURIComponent(league.slug)}`}  key={league.abbreviation} className='hover:text-orange transition-all cursor-pointer py-1 px-4 w-full border-y border-accent-4'>
                           {league.label}
                       </Link>
                   ))}
@@ -119,16 +119,16 @@ export default function LeagueTabs() {
             <Tab.Panel
               key={idx}
               className={classNames(
-                'rounded-sm bg-primary p-3 h-full py-4',
+                'rounded-sm bg-primary px-0 md:p-3 h-full py-4',
                 'ring-primary ring-opacity-60 ring-offset-2 ring-offset-primary focus:outline-none focus:ring-2'
               )}
             >
                 <div key={sport.sport} className='relative flex flex-col'>
-                    <div className='text-lg my-4 sm:text-xl md:text-2xl font-bold'>
+                    <div className='text-lg my-4 sm:text-xl md:text-2xl font-bold px-2'>
                         Top leagues
                     </div>
                   {sport.leagues.map((league) => (
-                      <Link href={`${league.slug}`} key={league.abbreviation} className='hover:text-orange transition-all cursor-pointer py-1 px-4 w-full border-b border-accent-4'>
+                      <Link href={`${league.slug}`} key={league.abbreviation} className='hover:text-orange transition-all cursor-pointer py-1 px-4 w-full border-y border-accent-4'>
                           {league.label}
                       </Link>
                   ))}
